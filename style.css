@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Outline&family=Fjalla+One&family=Libre+Barcode+128+Text&family=Rubik+Distressed&display=swap");
+
+.flex {
+  display: flex !important;
+}
+
+.flex.flex-row {
+  flex-direction: row !important;
+}
+
+.flex.flex-column {
+  flex-direction: column !important;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+.align-items-end {
+  align-items: flex-end !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.align-items-baseline {
+  align-items: baseline !important;
+}
+
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+.align-content-start {
+  align-content: flex-start !important;
+}
+
+.align-content-end {
+  align-content: flex-end !important;
+}
+
+.align-content-center {
+  align-content: center !important;
+}
+
+.align-content-between {
+  align-content: space-between !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.gutters {
+  gap: 10px;
+}
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  position: relative;
+  width: 100%;
+}
+
+.col {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .col-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #logo {
+    height: 100px !important;
+    background-size: cover;
+    object-fit: contain;
+  }
+  .judul {
+    font-size: 40px !important;
+    padding-bottom: 30px;
+  }
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("image/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: rgba(20, 30, 30, 0.5);
+  width: 60%;
+  margin: auto;
+}
+
+.judul {
+  display: flex;
+  font-family: "Black Ops One";
+  color: #fff;
+  text-shadow: #000 5px 10px 4px;
+  font-size: 60px;
+  color: white;
+  justify-content: center;
+  margin: auto;
+}
+
+header h1 {
+  color: aliceblue;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 60%;
+  margin-top: 10px;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Fjalla One";
+}
+
+.active {
+  background-color: sienna;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+main {
+  margin: auto;
+  width: 60%;
+  background-color: wheat;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: #333;
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+p {
+  padding-left: 20px;
+  color: #fff;
+}
+
+p a {
+  text-decoration: none;
+  font-family: "Libre Barcode 128 Text";
+  font-size: 30px;
+  color: #fff;
+}
+
+.info {
+  width: 100%;
+  padding-right: 30px;
+  color: #fff;
+}
+
+.copyright {
+  display: flex;
+  justify-content: right;
+  font-size: 14px;
+}
+
+#halaman-aboutme .col h2 {
+  font-family: "Black Ops One";
+  color: saddlebrown;
+  font-size: 30px;
+}
+
+#halaman-aboutme .col p {
+  font-family: "Fjalla One";
+  color: #111;
+  font-size: 30px;
+}
+
+#halaman-aboutme .col h3 {
+  font-family: "Fjalla One";
+  color: #111;
+  font-size: 17px;
+}
+
+#guitar-list .guitar-item p {
+  font-family: "Black Ops One";
+  color: saddlebrown;
+  font-size: 20px;
+}
+
+#guitar-list .guitar-item img {
+  height: 210px;
+  object-fit: contain;
+  background-size: cover;
+}
+
+#profil {
+  text-align: center;
+  border: 2px solid sienna;
+  width: 198px;
+  height: 199px;
+  overflow: hidden;
+  border-radius: 50%;
+}

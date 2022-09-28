@@ -158,21 +158,10 @@
   }
 }
 
-@media (max-width: 768px) {
-  #logo {
-    height: 100px !important;
-    background-size: cover;
-    object-fit: contain;
-  }
-  .judul {
-    font-size: 40px !important;
-    padding-bottom: 30px;
-  }
-}
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("image/Background.jpg");
+  url("image/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -239,6 +228,18 @@ main {
   background-color: wheat;
 }
 
+#guitar-list .guitar-item img {
+  height: 215px;
+  object-fit: contain;
+  background-size: cover;
+}
+
+#guitar-list .guitar-item p {
+  font-family: "Black Ops One";
+  color: saddlebrown;
+  font-size: 16px;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -250,7 +251,6 @@ footer {
 }
 
 p {
-  padding-left: 20px;
   color: #fff;
 }
 
@@ -262,15 +262,23 @@ p a {
 }
 
 .info {
-  width: 100%;
-  padding-right: 30px;
+  padding-left: 20px;
   color: #fff;
 }
 
 .copyright {
-  display: flex;
-  justify-content: right;
-  font-size: 14px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 13px;
+}
+
+#profil {
+  text-align: center;
+  border: 2px solid sienna;
+  width: 198px;
+  height: 199px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 #halaman-aboutme .col h2 {
@@ -291,23 +299,65 @@ p a {
   font-size: 17px;
 }
 
-#guitar-list .guitar-item p {
-  font-family: "Black Ops One";
-  color: saddlebrown;
-  font-size: 20px;
-}
+@media (max-width: 768px) {
+  #logo {
+    height: 100px !important;
+    background-size: cover;
+    object-fit: contain;
+  }
 
-#guitar-list .guitar-item img {
-  height: 210px;
-  object-fit: contain;
-  background-size: cover;
-}
+  .judul {
+    font-size: 20px !important;
+    padding-bottom: 30px;
+  }
+  
+  nav ul li a {
+    padding: 12px 12px;
+    font-size: 10px;
+  }
 
-#profil {
-  text-align: center;
-  border: 2px solid sienna;
-  width: 198px;
-  height: 199px;
-  overflow: hidden;
-  border-radius: 50%;
+  .active {
+    font-size: 10px;
+  }
+
+  #guitar-list .guitar-item img {
+    padding-left: 30px;
+    height: 200px;
+  }
+
+  #guitar-list .guitar-item p {
+    padding-left: 10px;
+    font-size: 11px;
+  }
+  
+  p a {
+    font-size: 15px;
+  }
+
+  .info {
+    padding-left: 5px;
+  }
+
+  .copyright {
+    font-size: 7px;
+    padding-right: 5px;
+  }
+
+  #halaman-aboutme .col h2 {
+    font-size: 16px;
+  }
+
+  #halaman-aboutme .col p {
+    font-size: 13px;
+  }
+
+  #halaman-aboutme .col h3 {
+    font-size: 10px;
+  }
+
+  #profil {
+    text-align: center;
+    width: 160px;
+    height: 160px;
+  }
 }

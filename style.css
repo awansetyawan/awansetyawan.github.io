@@ -161,15 +161,10 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url("image/Background.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  url("image/Background.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 header {
@@ -340,12 +335,14 @@ p a {
   }
 
   .info {
+    padding-bottom: 10px;
     padding-left: 5px;
   }
 
   .copyright {
     font-size: 7px;
     padding-right: 5px;
+    padding-bottom: 20px;
   }
 
   #halaman-aboutme .col h2 {

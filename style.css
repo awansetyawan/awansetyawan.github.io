@@ -161,10 +161,15 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  url("image/Background.jpg");
-  background-repeat: no-repeat;
+  url("image/Background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
+
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
 }
 
 header {

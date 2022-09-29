@@ -100,15 +100,17 @@ main {
 }
 
 #guitar-list .guitar-item img {
-  height: 215px;
+  padding-left: 5px;
+  height: 217px;
   object-fit: contain;
   background-size: cover;
 }
 
 #guitar-list .guitar-item p {
+  padding-left: 30px;
   font-family: "Black Ops One";
   color: saddlebrown;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 footer {
@@ -170,10 +172,8 @@ p a {
   font-size: 17px;
 }
 
+
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
   .kolom-1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
@@ -224,15 +224,32 @@ p a {
   }
 }
 
+@media screen and (max-width:1115px){
+
+  #guitar-list .guitar-item img {
+    padding-left: 10px;
+    height: 160px;
+  }
+
+  #guitar-list .guitar-item p {
+    padding-left: 40px;
+    font-size: 10px;
+  }
+  
+  .judul {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   #logo {
-    height: 100px !important;
+    height: 100px;
     background-size: cover;
     object-fit: contain;
   }
   
   .judul {
-    font-size: 20px !important;
+    font-size: 25px;
     padding-bottom: 30px;
   }
   

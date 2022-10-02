@@ -32,7 +32,6 @@ check.addEventListener('change', function () {
 
     // Manipulasi DOM Tulisan Judul
     header[0].innerHTML = 'Dark Gitar';
-    
 
     // Manipulasi DOM Warna pada Judul
     header[0].style.color = 'wheat';

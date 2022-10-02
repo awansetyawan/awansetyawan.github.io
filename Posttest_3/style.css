@@ -356,19 +356,20 @@ p a {
   }
 
   .switch{
-    padding: 3px 3px 10px 0px;
-    transform: translate(70%, 18%);
+    padding: 2px 1px 8px 1px;
+    transform: translate(70%, 19%);
   }
   
   .switch label{
+    padding: 0px 0px 2px 0px;
     width: 40px;
     height: 20px;
   }
   
   .switch label::after{
-    width: 9px;
-    height: 11px;
+    width: 12px;
+    height: 14px;
     top: 4px;
-    left: 5px;
+    left: 4px;
   }
 }

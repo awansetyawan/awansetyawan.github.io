@@ -26,7 +26,7 @@ check.addEventListener('change', function () {
     alert('Anda beralih Ke Mode Gelap');
 
     // Manipulasi DOM Tulisan Judul
-    header[0].innerHTML = 'Dark Galeri Gitar';
+    header[0].innerHTML = 'Dark Gitar';
 
     // Manipulasi DOM Warna pada Judul
     header[0].style.color = 'wheat';
